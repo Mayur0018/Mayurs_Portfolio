@@ -1,5 +1,5 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import HeroText from "../components/HeroText";
+import HeroText from "../components/HeroText.jsx"
 import ParallaxBackground from "../components/ParallaxBackground";
 import { Astronaut } from "../components/Astronaut";
 import { Float } from "@react-three/drei";
