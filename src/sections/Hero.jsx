@@ -1,6 +1,6 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import HeroText from "../components/HeroText.jsx"
-import ParallaxBackground from "../components/ParallaxBackground";
+import ParallaxBackground from "../Components/ParallaxBackground.jsx";
 import { Astronaut } from "../components/Astronaut";
 import { Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
