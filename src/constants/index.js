@@ -34,9 +34,8 @@ export const myProjects = [
     image: "/assets/projects/skullcandy.png",
     tags: [
       { id: 1, name: "React", path: "/assets/logos/react.svg" },
-      { id: 2, name: "Redux", path: "/assets/logos/redux.svg" },
-      { id: 3, name: "Framer Motion", path: "/assets/logos/framer.svg" },
-      { id: 4, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+      { id: 2, name: "Redux", path: "/assets/logos/redux.png" },
+      { id: 3, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
     ],
   },
 
