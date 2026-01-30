@@ -3,22 +3,20 @@ export const myProjects = [
     id: 1,
     title: "Mayur Paushak",
     description:
-      "An international shopping facilitator built with the MERN stack and Next.js, enabling users to purchase products from global platforms and receive them through a streamlined domestic delivery system.",
+      "A global shopping platform enabling users to buy international products with seamless local delivery.",
     subDescription: [
-      "Developed a full-stack application using Next.js, React, Node.js, and MongoDB for scalable and high-performance rendering.",
-      "Integrated Supabase authentication for secure user login, session management, and role-based access control.",
-      "Implemented Stripe payment gateway using Strapi CMS for secure transactions and dynamic order management.",
+      "Built with Next.js, React, Node.js, and MongoDB.",
+      "Secure authentication using Supabase.",
+      "Stripe payments with Strapi-based order management.",
     ],
     href: "https://mayur-poshak-ifcj.vercel.app/",
-    logo: "",
     image: "/assets/projects/mayur-paushak.png",
     tags: [
       { id: 1, name: "Next.js", path: "/assets/logos/react.svg" },
       { id: 2, name: "Node.js", path: "/assets/logos/node.svg" },
       { id: 3, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
-      { id: 4, name: "Supabase", path: "/assets/logos/supabase.svg" },
-      { id: 5, name: "Stripe", path: "/assets/logos/stripe.svg" },
-      { id: 6, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+      { id: 4, name: "Stripe", path: "/assets/logos/stripe.svg" },
+      { id: 5, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
     ],
   },
 
@@ -26,15 +24,13 @@ export const myProjects = [
     id: 2,
     title: "Skullcandy Responsive Website",
     description:
-      "A fully responsive and animated brand website inspired by Skullcandy, delivering a modern and engaging user experience.",
+      "A modern, animated, and fully responsive brand-inspired website.",
     subDescription: [
-      "Built a pixel-perfect responsive UI using React, Redux, and Tailwind CSS.",
-      "Implemented smooth animations and page transitions with Framer Motion.",
-      "Managed global state efficiently using Redux for products and UI interactions.",
-      "Optimized layout and performance for mobile, tablet, and desktop devices.",
+      "Pixel-perfect UI using React and Tailwind CSS.",
+      "Smooth animations with Framer Motion.",
+      "State management handled via Redux.",
     ],
     href: "https://skull-candy-je8x.vercel.app/",
-    logo: "",
     image: "/assets/projects/skullcandy.png",
     tags: [
       { id: 1, name: "React", path: "/assets/logos/react.svg" },
@@ -48,15 +44,13 @@ export const myProjects = [
     id: 3,
     title: "Doctor Appointment Booking System",
     description:
-      "A fully responsive web application that allows users to schedule and book doctor appointments online.",
+      "A responsive web app for booking doctor appointments online.",
     subDescription: [
-      "Developed a user-friendly appointment booking interface using React and Tailwind CSS.",
-      "Enabled users to view doctor availability and schedule appointments seamlessly.",
-      "Designed a fully responsive layout for smooth usage across all devices.",
-      "Focused on clean UI, accessibility, and intuitive user flows.",
+      "Clean booking flow with React and Tailwind CSS.",
+      "Doctor availability and scheduling support.",
+      "Mobile-first responsive design.",
     ],
     href: "https://doctor-appointment-booking-pink.vercel.app/",
-    logo: "",
     image: "/assets/projects/healthbuddy.png",
     tags: [
       { id: 1, name: "React", path: "/assets/logos/react.svg" },
@@ -69,15 +63,13 @@ export const myProjects = [
     id: 4,
     title: "Flirtway (Company Project)",
     description:
-      "A production-ready company project built for scalability, performance, and real-world usage.",
+      "A scalable, production-ready application built for real-world use.",
     subDescription: [
-      "Developed a fully responsive frontend using React and Tailwind CSS.",
-      "Implemented RTK Query for efficient API data fetching and state management.",
-      "Built and integrated backend services using Node.js.",
-      "Deployed the application on AWS with optimized performance and scalability.",
+      "Responsive frontend with React and Tailwind CSS.",
+      "Efficient API handling using RTK Query.",
+      "AWS deployment with Node.js backend.",
     ],
     href: "",
-    logo: "",
     image: "/assets/projects/flirtway.png",
     tags: [
       { id: 1, name: "React", path: "/assets/logos/react.svg" },
