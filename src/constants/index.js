@@ -1,227 +1,94 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Mayur Paushak",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "An international shopping facilitator built with the MERN stack and Next.js, enabling users to purchase products from global platforms and receive them through a streamlined domestic delivery system.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Developed a full-stack application using Next.js, React, Node.js, and MongoDB for scalable and high-performance rendering.",
+      "Integrated Supabase authentication for secure user login, session management, and role-based access control.",
+      "Implemented Stripe payment gateway using Strapi CMS for secure transactions and dynamic order management.",
     ],
-    href: "",
+    href: "https://mayur-poshak-ifcj.vercel.app/",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/mayur-paushak.png",
     tags: [
-      {
-        id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
-      },
-      {
-        id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+      { id: 1, name: "Next.js", path: "/assets/logos/react.svg" },
+      { id: 2, name: "Node.js", path: "/assets/logos/node.svg" },
+      { id: 3, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
+      { id: 4, name: "Supabase", path: "/assets/logos/supabase.svg" },
+      { id: 5, name: "Stripe", path: "/assets/logos/stripe.svg" },
+      { id: 6, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
     ],
   },
+
   {
     id: 2,
-    title: "Authentication & Authorization System",
+    title: "Skullcandy Responsive Website",
     description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+      "A fully responsive and animated brand website inspired by Skullcandy, delivering a modern and engaging user experience.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      "Built a pixel-perfect responsive UI using React, Redux, and Tailwind CSS.",
+      "Implemented smooth animations and page transitions with Framer Motion.",
+      "Managed global state efficiently using Redux for products and UI interactions.",
+      "Optimized layout and performance for mobile, tablet, and desktop devices.",
     ],
-    href: "",
+    href: "https://skull-candy-je8x.vercel.app/",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/assets/projects/skullcandy.png",
     tags: [
-      {
-        id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
-      },
-      {
-        id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "Redux", path: "/assets/logos/redux.svg" },
+      { id: 3, name: "Framer Motion", path: "/assets/logos/framer.svg" },
+      { id: 4, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
     ],
   },
+
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "Doctor Appointment Booking System",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "A fully responsive web application that allows users to schedule and book doctor appointments online.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Developed a user-friendly appointment booking interface using React and Tailwind CSS.",
+      "Enabled users to view doctor availability and schedule appointments seamlessly.",
+      "Designed a fully responsive layout for smooth usage across all devices.",
+      "Focused on clean UI, accessibility, and intuitive user flows.",
     ],
-    href: "",
+    href: "https://doctor-appointment-booking-pink.vercel.app/",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/assets/projects/healthbuddy.png",
     tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+      { id: 3, name: "JavaScript", path: "/assets/logos/javascript.svg" },
     ],
   },
+
   {
     id: 4,
-    title: "C++ Game Engine",
+    title: "Flirtway (Company Project)",
     description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
+      "A production-ready company project built for scalability, performance, and real-world usage.",
     subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
+      "Developed a fully responsive frontend using React and Tailwind CSS.",
+      "Implemented RTK Query for efficient API data fetching and state management.",
+      "Built and integrated backend services using Node.js.",
+      "Deployed the application on AWS with optimized performance and scalability.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/game-engine.jpg",
+    image: "/assets/projects/flirtway.png",
     tags: [
-      {
-        id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
-      },
-      {
-        id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "WordPress Custom Theme",
-    description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
-    subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
-      },
-      {
-        id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Online Learning Platform",
-    description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-    subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/elearning.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "RTK Query", path: "/assets/logos/redux.png" },
+      { id: 3, name: "Node.js", path: "/assets/logos/node.svg" },
+      { id: 4, name: "AWS", path: "/assets/logos/aws.svg" },
+      { id: 5, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
     ],
   },
 ];
+
 
 export const mySocials = [
   {
