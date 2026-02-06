@@ -18,6 +18,11 @@ function Navigation() {
           Work
         </a>
       </li>
+       <li className="nav-li">
+        <a className="nav-link" href="#work">
+          Blog
+        </a>
+      </li>
       <li className="nav-li">
         <a className="nav-link" href="#contact">
           Contact
