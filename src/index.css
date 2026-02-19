@@ -61,7 +61,7 @@ body {
 }
 
 .c-space {
-  @apply sm:px-10 px-5 lg:px-15;
+  @apply px-5 sm:px-10 lg:px-20;
 }
 
 .hover-animation {
@@ -69,19 +69,28 @@ body {
 }
 
 .section-spacing {
-  @apply min-h-screen mt-20 md:mt-30;
+  @apply py-20 md:py-32 lg:py-40;
 }
 
+/* Typography Scale */
 .text-heading {
-  @apply font-bold text-3xl md:text-4xl;
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+}
+
+.text-subheading {
+  @apply text-xl sm:text-2xl md:text-3xl font-semibold text-neutral-300;
 }
 
 .headtext {
-  @apply mt-2 mb-2 text-xl;
+  @apply text-lg sm:text-xl md:text-2xl font-semibold mt-2 mb-2;
 }
 
 .subtext {
-  @apply text-neutral-400 text-sm md:text-base text-pretty;
+  @apply text-neutral-400 text-sm sm:text-base md:text-lg text-pretty leading-relaxed;
+}
+
+.text-body {
+  @apply text-sm sm:text-base text-neutral-400;
 }
 
 /* Navigation */

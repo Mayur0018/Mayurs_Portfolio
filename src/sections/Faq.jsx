@@ -71,49 +71,48 @@ const Faq = () => {
       className="w-full max-w-4xl mx-auto px-6 py-20 text-white"
     >
       {/* Heading */}
-      <h2 className="text-4xl font-bold text-center mb-4">
+      <h2 className="text-heading text-center mb-6">
         Frequently Asked Questions
       </h2>
-      <p className="text-center text-neutral-400 mb-12">
-        Common questions about my full-stack development work
+      <p className="subtext text-center mb-16 max-w-2xl mx-auto">
+        Common questions about my full-stack development work and process.
       </p>
 
       {/* FAQ List */}
-      <div className="space-y-4">
+      <div className="space-y-6">
         {faqData.map((item, index) => {
           const isOpen = openIndex === index;
 
           return (
             <motion.div
               key={index}
-              className="border border-neutral-700 rounded-xl overflow-hidden"
+              className="border border-white/5 rounded-2xl overflow-hidden bg-white/[0.02] backdrop-blur-sm"
               initial={false}
-              whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
+              whileHover={{ scale: 1.01, backgroundColor: "rgba(255,255,255,0.04)" }}
             >
               {/* Question */}
               <button
                 onClick={() => toggle(index)}
-                className="w-full flex items-center justify-between gap-4 px-5 py-4 bg-neutral-900 hover:bg-neutral-800 transition"
+                className="w-full flex items-center justify-between gap-4 px-6 py-5 hover:bg-white/5 transition-all text-left"
               >
-                <div className="flex items-center gap-4 text-left">
+                <div className="flex items-center gap-5">
                   <motion.span 
-                    className="text-lavender text-xl"
+                    className="text-lavender text-2xl"
                     animate={{ rotate: isOpen ? 90 : 0 }}
-                    transition={{ duration: 0.3 }}
                   >
                     {item.icon}
                   </motion.span>
-                  <span className="font-medium">{item.question}</span>
+                  <span className="text-xl sm:text-2xl font-medium text-neutral-200">{item.question}</span>
                 </div>
 
                 <motion.div
                   animate={{ rotate: isOpen ? 180 : 0 }}
-                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                  transition={{ duration: 0.4 }}
                 >
                   {isOpen ? (
-                    <FiMinus className="text-xl text-white" />
+                    <FiMinus className="text-3xl text-neutral-400" />
                   ) : (
-                    <FiPlus className="text-xl text-lavender" />
+                    <FiPlus className="text-3xl text-lavender" />
                   )}
                 </motion.div>
               </button>
@@ -126,7 +125,7 @@ const Faq = () => {
                     initial="hidden"
                     animate="visible"
                     exit="exit"
-                    className="px-5 py-4 text-neutral-300 bg-neutral-950 leading-relaxed"
+                    className="px-6 pb-8 pt-0 text-lg sm:text-xl lg:text-2xl text-neutral-400 leading-relaxed font-light"
                   >
                     {item.answer}
                   </motion.div>

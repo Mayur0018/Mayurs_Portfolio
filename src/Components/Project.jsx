@@ -14,24 +14,24 @@ const Project = ({
   return (
     <>
       <div
-        className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
+        className="flex flex-col sm:flex-row items-start sm:items-center justify-between py-10 gap-6 sm:gap-0"
         onMouseEnter={() => setPreview(image)}
         onMouseLeave={() => setPreview(null)}
       >
-        <div>
-          <p className="text-2xl">{title}</p>
-          <div className="flex gap-5 mt-2 text-sand flex-wrap">
+        <div className="flex flex-col gap-2">
+          <p className="text-xl sm:text-2xl font-semibold text-white">{title}</p>
+          <div className="flex gap-4 sm:gap-5 text-neutral-400 flex-wrap text-sm sm:text-base">
             {tags.map((tag) => (
-              <span key={tag.id}>{tag.name}</span>
+              <span key={tag.id} className="opacity-80">#{tag.name}</span>
             ))}
           </div>
         </div>
         <button
           onClick={() => setIsHidden(true)}
-          className="flex items-center gap-1 cursor-pointer hover-animation"
+          className="flex items-center gap-2 cursor-pointer hover-animation text-sm sm:text-base font-medium px-4 py-2 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition-colors"
         >
           Read More
-          <img src="assets/arrow-right.svg" className="w-5" />
+          <img src="assets/arrow-right.svg" className="w-4 h-4" />
         </button>
       </div>
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />

@@ -15,19 +15,19 @@ const ProjectDetails = ({
         className="
           relative w-full max-w-2xl
           max-h-[90vh] overflow-y-auto
-          border border-white/10
-          shadow-lg rounded-2xl
-          bg-gradient-to-l from-midnight to-navy
+          border border-white/5
+          shadow-2xl rounded-3xl
+          bg-neutral-950
         "
-        initial={{ opacity: 0, scale: 0.9 }}
+        initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
       >
         {/* Close Button */}
         <button
           onClick={closeModal}
-          className="absolute z-10 p-2 rounded-md top-4 right-4 bg-midnight hover:bg-gray-600"
+          className="absolute z-10 p-2 rounded-full top-4 right-4 bg-white/5 hover:bg-white/10 backdrop-blur-md transition-colors"
         >
-          <img src="assets/close.svg" className="w-5 h-5" />
+          <img src="assets/close.svg" className="w-5 h-5 opacity-70" />
         </button>
 
         {/* Image */}

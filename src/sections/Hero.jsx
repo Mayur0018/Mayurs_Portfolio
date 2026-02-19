@@ -9,21 +9,27 @@ import { Suspense } from "react";
 import Loader from "../components/Loader";
 
 const Hero = () => {
-  const isMobile = useMediaQuery({ maxWidth: 853 });
+  const isSmallMobile = useMediaQuery({ maxWidth: 480 });
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 769, maxWidth: 1024 });
+
+  const astronautScale = isSmallMobile ? 0.2 : isMobile ? 0.23 : isTablet ? 0.25 : 0.3;
+  const astronautPosition = isMobile ? [0, -1.5, 0] : isTablet ? [0.5, -1, 0] : [1, -1, 0];
+
   return (
-    <section className="flex items-start justify-center min-h-screen overflow-hidden md:items-start md:justify-start c-space">
+    <section className="relative flex flex-col md:flex-row items-center md:items-start justify-center min-h-screen overflow-hidden c-space pt-32 md:pt-0">
       <HeroText />
       <ParallaxBackground />
       <figure
-        className="absolute inset-0"
+        className="absolute inset-0 -z-10"
         style={{ width: "100vw", height: "100vh" }}
       >
         <Canvas camera={{ position: [0, 1, 3] }}>
           <Suspense fallback={<Loader />}>
             <Float>
               <Astronaut
-                scale={isMobile && 0.23}
-                position={isMobile && [0, -1.5, 0]}
+                scale={astronautScale}
+                position={astronautPosition}
               />
             </Float>
             <Rig />

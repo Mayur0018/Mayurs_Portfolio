@@ -8,7 +8,7 @@ const ReviewCard = ({ img, name, username, body }) => {
   return (
     <figure
       className={twMerge(
-        "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4 border-gray-50/[.1] bg-gradient-to-r bg-indigo to-storm hover:bg-royal hover-animation"
+        "relative h-full w-64 sm:w-80 cursor-pointer overflow-hidden rounded-3xl border p-5 sm:p-6 border-white/5 bg-neutral-900/40 backdrop-blur-md hover:bg-neutral-800/60 transition-colors"
       )}
     >
       <div className="flex flex-row items-center gap-2">
@@ -26,7 +26,9 @@ const ReviewCard = ({ img, name, username, body }) => {
           <p className="text-xs font-medium text-white/40">{username}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <blockquote className="mt-3 text-sm sm:text-base leading-relaxed text-neutral-300">
+        {body}
+      </blockquote>
     </figure>
   );
 };
